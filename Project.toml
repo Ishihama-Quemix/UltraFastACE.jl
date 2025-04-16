@@ -27,8 +27,9 @@ StrideArrays = "d1fa6d79-ef01-42a6-86c9-f7c551f8593b"
 WithAlloc = "fb1aa66a-603c-4c1d-9bc4-66947c7b08dd"
 
 [compat]
-ChunkSplitters = "2"
+ChunkSplitters = "3"
 Folds = "0.2"
+JuLIP = "0.16"
 NamedTupleTools = "0.14"
 Polynomials4ML = "0.3.0"
 julia = "1"

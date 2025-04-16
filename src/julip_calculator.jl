@@ -103,7 +103,7 @@ function forces_new_mt(ace::UFACE, at::Atoms;
                         executor = ThreadedEx(),
                         ntasks = Threads.nthreads())
    nlist = neighbourlist(at, cutoff(ace))
-   return Folds.sum( collect(chunks(domain, ntasks)), executor ) do (d, _)
+   return Folds.sum( collect(chunks(domain; n=ntasks)), executor ) do d
       forces_new(ace, at; domain=d, nlist = nlist)
    end
 end
